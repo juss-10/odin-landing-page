@@ -1,0 +1,59 @@
+:root {
+    --color-light: #F9FAF8;
+    --color-dark: #1F2937;
+    --color-gray: #E5E7EB;
+    --color-accent: #3882F6;
+    
+    
+    --font-size-large: 3rem;
+    --font-size-medium-large: 2.25rem;
+    --font-size-medium: 1.5rem;
+    --font-size-medium-small : 1.125rem;
+    --font-size-body: 1rem;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.site-header {
+    background-color: var(--color-dark);
+}
+
+.site-nav {
+    display: flex;
+    column-gap: 2em;
+    padding: 1em 0;
+    list-style: none;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo a {
+    color: var(--color-light);
+}
+
+.nav-link {
+    color: var(--color-gray);
+    text-decoration: none;
+}
