@@ -30,9 +30,41 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
 }
+
+/* TYPOGRAPHY */
+
+.hero-title {
+    font-size: var(--font-size-large);
+    color: var(--color-light);
+    margin: 0;
+}
+
+.hero-body {
+    color: var(--color-gray);
+}
+
+.dark a:link {
+    color: white;
+}
+
+.light a:link {
+    color: black;
+}
+
+.cta {
+    text-decoration: none;
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    display: inline-block;
+    padding: 0.5em 2rem;
+    border-radius: 4px;
+}
+
+
+/* site header nav */
 
 .site-header {
     background-color: var(--color-dark);
@@ -40,6 +72,7 @@ body {
 
 .site-nav {
     display: flex;
+    align-items: center;
     column-gap: 2em;
     padding: 1em 0;
     list-style: none;
@@ -47,6 +80,8 @@ body {
 
 .logo {
     margin-right: auto;
+    font-size: var(--font-size-medium);
+    font-weight: bold;
 }
 
 .logo a {
@@ -54,6 +89,35 @@ body {
 }
 
 .nav-link {
+    font-size: var(--font-size-medium-small);
     color: var(--color-gray);
     text-decoration: none;
+}
+
+/* site hero */
+
+.hero {
+    background-color: var(--color-dark);
+    padding: 6em 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 4em;
+}
+
+.hero-message {
+   width: 50%;
+}
+
+.hero-image {
+    width: 50%;
+    height: 250px;
+    background-color: gray;
+    flex: auto;
+    background-image: url("../assets/images/business.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
