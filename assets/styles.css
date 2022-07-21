@@ -78,7 +78,8 @@ h2 {
     font-weight: normal;
 }
 
-.cta {
+.cta,
+.cta-banner a {
     text-decoration: none;
     color: var(--color-light);
     background-color: var(--color-accent);
@@ -87,6 +88,23 @@ h2 {
     border-radius: 4px;
 }
 
+.cta-title,
+.cta-body {
+    margin: 0;
+}
+
+.cta-title {
+    margin-bottom: 0.2em;
+}
+
+.cta-body {
+    color: var(--color-gray);
+    font-size: var(--font-size-medium-small);
+}
+
+.text-medium {
+    font-size: var(--font-size-medium);
+}
 
 /* site header nav */
 
@@ -108,8 +126,14 @@ h2 {
     font-weight: bold;
 }
 
-.logo a {
+.logo a,
+.cta-banner a {
     color: var(--color-light);
+    text-decoration: none;
+}
+
+.cta-banner a {
+    border: 3px solid var(--color-light);
 }
 
 .nav-link {
@@ -203,4 +227,17 @@ figcaption {
 .figure-center {
     width: 80%;
     margin: 0 auto;
+}
+
+/* cta-banner */
+
+.cta-banner {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    border-radius: 6px;
+    padding: 3.5em 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2em;
 }
